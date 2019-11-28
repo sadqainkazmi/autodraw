@@ -1,0 +1,19 @@
+<header>
+  <h1>AutoDraw<br><h2>An Intelligent App</h2></h1>
+  <h2>Artificial Intelligent Project | PAF-Kiet 102470</h2>
+ 
+</header>
+
+<div class="canvas">
+  <canvas #canvas width="350" height="350"></canvas>
+  <button type="button" class="clear-canvas-button" (click)="eraseCanvas()">Clear canvas</button>
+</div>
+
+
+<div class="autodraw-results">
+  <ng-template ngFor [ngForOf]="drawSuggestions" let-suggestion>
+    <figure class="autodraw-image" *ngFor="let icon of suggestion.icons" (click)="pickSuggestion(icon)">
+      <img src="{{ icon }}" width="90" height="90" alt="{{ suggestion.name }}" title="{{ suggestion.name }}">
+    </figure>
+  </ng-template>
+</div>

@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  background: #f5f5f5 url(/assets/background.png);
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-image: linear-gradient(to left bottom, #070518, #151a25, #222a32, #323a3f, #444a4c, #54595a, #656868, #767777, #878889, #999a9b, #acacad, #bfbfc0);  color: white;
+  padding: 10px;
+  color: white;
+  h1, h2 {
+    text-align: center;
+    margin: 0;
+
+    a {
+      text-decoration: none;
+      color: white;
+
+      &:hover {
+        text-decoration:underline;
+      }
+    }
+  }
+}
+
+
+
